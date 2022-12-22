@@ -15,7 +15,7 @@ ui<- fluidPage(
                       radioButtons("pemisahvariabel", "Separator",choices = c(Comma = ",",Semicolon = ";",  Tab = "\t"),selected = ",", inline = TRUE),
                       radioButtons("ekstensi","File Extention", choices = c( "csv","xlsx"),selected = "xlsx", inline = TRUE),
                       hr(),hr(),
-                      h3("by Hari Purnomo Susanto"),hr(),hr(),
+                      h3("by Hari Purnomo Susanto"),hr(),hr()
 
          ),
 
