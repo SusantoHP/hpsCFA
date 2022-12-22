@@ -1,0 +1,12 @@
+Package: hpsCFA
+Type: Package
+Title: Analisis Validitas Konstruk dengan CFA
+Version: 0.1.0
+Author: Hari Purnomo Susanto
+Maintainer: Hari Purnomo Susanto <haripurnomosusanto@gmail.com>
+Description: Analisis CFA untuk melakukan validitas kontruk.Selain gratis, Package ini diharapkan dapat memberikan kemudahan dibandingkan menggunakan software-sofware berbayar.
+Imports: corrplot, lavaan, psych, readxl, semPlot, shiny,writexl
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
