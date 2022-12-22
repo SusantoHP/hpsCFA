@@ -43,16 +43,10 @@ ui<- fluidPage(
                                                 column(width = 12,
                                                        h2("Analisis CFA "),hr(),
                                                        textInput("aspek1","Tuliskan model",width = "100%"),hr(),
-                                                       h3("Contoh menuliskan Model:",style="font-family: 'cursive';color: blue;text-align:blue"),
-                                                       h4("jika kontruk instrumen anda ada tiga faktor yaitu Y1, Y2, dan Y3, maka dapat ditulisakan sebagai berikut:"),
-                                                       h4("Order 1: \n
-                                                 Y1=~X2+X4+X5+X6+X1+X3;\n
-                                                 Y2=~X7+X8+X10+X11;\n
-                                                 Y3=~X12+X13+X14+X17+X16 \n
-                                                 Order2:\n
-                                                 Y=~Y1+Y2+Y3
-                                                 "),br(),
-                                                       h4("Catatan: Setiap Faktor dipisahkan dengan tandan titik koma (;)",style="font-family: 'cursive';color: red;text-align:left"),hr(),
+                                                       h4("Contoh menuliskan Model:",style="font-family: 'cursive';color: blue;text-align:blue"),
+                                                       h5("jika kontruk instrumen anda ada tiga faktor yaitu Y1, Y2, dan Y3, maka dapat ditulisakan sebagai berikut:"),
+                                                       htmlOutput("keter"),br(),
+                                                       h4("Catatan: Setiap Faktor dipisahkan dengan tanda titik koma (;)",style="font-family: 'cursive';color: red;text-align:left"),hr(),
                                                        numericInput("observasi",label = "Banyak Sampel:",value = 100,min = 40,max = 10000,step = 1),br(),
                                                        actionButton("analisis","Analisis",width = "30%",icon =icon("book"))
 

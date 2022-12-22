@@ -16,7 +16,9 @@ server <- function(input, output, session) {
 
     return(p)
   })
-
+  output$keter<-renderUI({
+    HTML(paste("<b>untuk Order 1 tuliskan:</b>","Y1=~X2+X4+X5+X6+X1+X3;","Y2=~X7+X8+X10+X11;","Y3=~X12+X13+X14+X17+X16", "<b>untuk Order2 tambahkan:</b>","Y=~Y1+Y2+Y3",sep ="<br/>"))
+  })
   output$inputdatahps<-DT::renderDT({
     if(is.null(hpsok()))  return(NULL)
 
