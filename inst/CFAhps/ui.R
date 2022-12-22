@@ -16,8 +16,7 @@ ui<- fluidPage(
                       radioButtons("ekstensi","File Extention", choices = c( "csv","xlsx"),selected = "xlsx", inline = TRUE),
                       hr(),hr(),
                       h3("by Hari Purnomo Susanto"),hr(),hr(),
-                      h4("Aplikasidibuat untuk memudahkan mahasiswa STKIP PGRI Pacitan, khususnya mahasiswa PGSD Tingkat 3 2022 dalam melakukan uji validitas Konstruik",style="
-                font-family: 'cursive';color: blue;text-align:left")
+
          ),
 
          mainPanel(width = 8,
